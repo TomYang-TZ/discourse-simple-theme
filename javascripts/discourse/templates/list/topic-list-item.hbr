@@ -42,15 +42,15 @@
   </td>
 {{/if}}
 
-{{#if showOpLikes}}
-  <td class="num likes topic-list-data">
-    {{#if hasOpLikes}}
-      <a href='{{topic.summaryUrl}}'>
-        {{number topic.op_like_count}} {{d-icon "heart"}}
-      </a>
-    {{/if}}
-  </td>
-{{/if}}
+
+<td class="num likes topic-list-data">
+  {{#if hasOpLikes}}
+    <a href='{{topic.summaryUrl}}'>
+      {{number topic.op_like_count}} {{d-icon "heart"}}
+    </a>
+  {{/if}}
+</td>
+
 
 {{raw "list/posts-count-column" topic=topic}}
 
